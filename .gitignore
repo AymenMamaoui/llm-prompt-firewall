@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data: too large, and each dataset keeps its own license
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models and training artifacts
+models/
+checkpoints/
+runs/
+wandb/
+mlruns/
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# Proxy logs (may contain user prompts)
+logs/
+*.log
+
+# Local Hugging Face cache
+.cache/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
